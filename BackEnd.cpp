@@ -9,17 +9,18 @@
 
 
 //flightBookingQuery
-//Always returns an empty list
 //The final implementation will return a vector<Booking> per the specifications
 
 std::vector<Booking> flightBookingQuery(std::vector<Flight*>& allFlights, Airport& source, Airport& dest) {
+	
+	//This version always retuns an empty vector just so you can compile, link, and run your tests
+	
 	std::vector<Booking> toReturn;
 	return toReturn;
 }
 
 //purchaseBooking
-//Does nothing
 //The final implementation will process a Booking when it is purchased
 void purchaseBooking(Booking& toPurchase) {
-
+	//This version does nothing just so you can compile, link, and run your tests
 }

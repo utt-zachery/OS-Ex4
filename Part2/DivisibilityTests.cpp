@@ -1,3 +1,3 @@
-#include "Divisiblity.h"
+#include "Divisibility.h"
 
 //Unit tests go here

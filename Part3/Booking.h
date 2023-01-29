@@ -11,7 +11,7 @@
 class Booking {
 
 private:
-	//Holds the Flight objects used for this query
+	//Holds the Flight objects used for this trip
 	std::vector<Flight*> flights;	
 
 public:

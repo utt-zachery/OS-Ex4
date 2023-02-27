@@ -31,5 +31,11 @@ public:
 		this->capacity--;
 	}
 
-
+	Airport& getSource() {
+		return this->source;	
+	}
+	
+	Airport& getDestination() {
+		return this->destination;	
+	}
 };

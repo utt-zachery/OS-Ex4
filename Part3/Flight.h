@@ -38,4 +38,8 @@ public:
 	Airport& getDestination() {
 		return this->destination;	
 	}
+	
+	//Flights should NEVER be copied to prevent consistency issues.
+	Flight(const Flight&) = delete;
+	Flight& operator=(Flight&) = delete;
 };

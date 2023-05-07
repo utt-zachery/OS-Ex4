@@ -26,5 +26,13 @@ public:
 	std::vector<Flight*> getFlights() {
 		return flights;
 	}
+	
+	//equality operator
+	//two bookings are equivalent iff they contain vectors with the same flights in the same order
+	bool operator==(const aggregate1& rhs) const
+	{
+	     return this-flights == rhs->flights;
+	}
+
 };
 

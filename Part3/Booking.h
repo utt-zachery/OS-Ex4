@@ -28,7 +28,7 @@ public:
 	}
 	
 	//equality operator
-	//two bookings are equivalent iff they contain vectors with the same flights in the same order
+	//two bookings are equivalent iff they contain equivalent vectors with the same flights in the same order
 	bool operator==(const Booking& rhs) const
 	{
 	     return this->flights == rhs.flights;

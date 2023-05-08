@@ -29,7 +29,7 @@ public:
 	}
 	
 	//equality operator
-	//two bookings are equivalent iff they contain equivalent vectors with the same flights in the same order
+	//two bookings are equivalent iff they contain equivalent vectors with the same flights
 	bool operator==(const Booking& rhs) const
 	{
 	     return (set<Flight*>(this->flights.start(), this->flights.end()) == set<Flight*>(rhs.start(), rhs.end()));

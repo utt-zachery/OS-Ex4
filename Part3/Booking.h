@@ -32,7 +32,7 @@ public:
 	//two bookings are equivalent iff they contain equivalent vectors with the same flights
 	bool operator==(const Booking& rhs) const
 	{
-	     return (set<Flight*>(this->flights.start(), this->flights.end()) == set<Flight*>(rhs.start(), rhs.end()));
+	     return (std::set<Flight*>(this->flights.begin(), this->flights.end()) == std::set<Flight*>(rhs.flights.begin(), rhs.flights.end()));
 	}
 
 };

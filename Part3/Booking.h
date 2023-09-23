@@ -18,22 +18,14 @@ private:
 public:
 
 	//Booking Constructor
-	Booking(std::vector<Flight*>& flights) : flights(flights) {
-
-	};
+	Booking(std::vector<Flight*>& flights);
 
 	//returns a copy of the flights member
 	//which hold pointers to the Flight objects
-	std::vector<Flight*> getFlights() {
-		return flights;
-	}
+	std::vector<Flight*> getFlights();
 	
 	//equality operator
 	//two bookings are equivalent iff they contain equivalent vectors with the same flights
-	bool operator==(const Booking& rhs) const
-	{
-	     return (set<Flight*>(this->flights.start(), this->flights.end()) == set<Flight*>(rhs.start(), rhs.end()));
-	}
+	bool operator==(const Booking& rhs) const;
 
 };
-
